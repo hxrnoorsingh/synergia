@@ -1,4 +1,7 @@
-# Hybrid Cognitive Agent: From "Complexity Wall" to "Neurosymbolic Solution" 🧠🤖
+# SYNERGIA: Hybrid Cognitive Agent
+**Symbolic-Neural General Intelligence Agent**
+
+*From "Complexity Wall" to Neurosymbolic Solution* 🧠🤖
 
 **A research project exploring how Symbolic Logic (System 1) and Deep Reinforcement Learning (System 2) can work together to solve complex navigation tasks.**
 
