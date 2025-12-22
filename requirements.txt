@@ -1,0 +1,8 @@
+numpy
+gymnasium
+plotly
+matplotlib
+pandas
+ipykernel
+nbformat
+imageio

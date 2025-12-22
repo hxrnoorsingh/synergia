@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.conda_venv/
+.env
+
+# Project Specific
+experiments/results/
+!experiments/results/deep_agent_model.pth
+!experiments/results/*.csv
+analysis/*.png
+analysis/*.gif
+
+# IDE
+.vscode/
