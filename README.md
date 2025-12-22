@@ -62,17 +62,22 @@ The Hybrid Agent navigates the maze, avoids the "U-Trap", and finds the goal eff
 The agent uses a **Triple-System Architecture** generally inspired by ACT-R and SOAR:
 
 ```mermaid
-graph TD
-    Env["Environment\n(GridWorld)"] --> Perc["Perception"]
-    Perc --> WM["Working Memory"]
-    Perc --> Rules["System 1: Symbolic Rules\n(Fast, Rigid)"]
-    Perc --> DQN["System 2: Deep Q-Network\n(Slow, Adaptive)"]
-    Rules --> Arb["Arbitrator"]
-    DQN --> Arb
-    Arb --> Meta["System 3: Meta-Cognition\n(Taboo List / Inhibition)"]
-    Meta --> Action["Action Selection"]
-    Action --> Env
+flowchart LR
+    A[Environment] --> B[Perception]
+    B --> C[Working Memory]
+    B --> D[System 1: Rules]
+    B --> E[System 2: Deep RL]
+    D --> F[Arbitrator]
+    E --> F
+    F --> G[System 3: Meta-Cognition]
+    G --> H[Action]
+    H --> A
 ```
+
+**System Details:**
+- **System 1 (Rules)**: Fast, symbolic, rigid decision-making
+- **System 2 (Deep RL)**: Slow, adaptive, learned policies  
+- **System 3 (Meta-Cognition)**: Taboo List and conflict resolution
 
 ## 💻 How to Run
 
