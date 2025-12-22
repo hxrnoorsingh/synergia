@@ -111,5 +111,5 @@ flowchart LR
 This project demonstrates that **Hybrid AI** is not just about stacking modules, but about managing the *conflicts* between them. The final agent is faster than RL and smarter than Logic.
 
 ---
-**Created by:** Cognitive Agent Research Team
+**Created by:** Harnoor Singh, BS Cognitive Science 
 **Tech Stack:** PyTorch, Gymnasium, NumPy

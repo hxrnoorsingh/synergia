@@ -10,8 +10,8 @@ venv/
 experiments/results/
 !experiments/results/deep_agent_model.pth
 !experiments/results/*.csv
-analysis/*.png
-analysis/*.gif
+# analysis/*.png  <-- REMOVED exclusion
+# analysis/*.gif  <-- REMOVED exclusion
 
 # IDE
 .vscode/
