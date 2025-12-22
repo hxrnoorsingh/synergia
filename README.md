@@ -63,14 +63,14 @@ The agent uses a **Triple-System Architecture** generally inspired by ACT-R and 
 
 ```mermaid
 graph TD
-    Env[Environment\n(GridWorld)] --> Perc[Perception]
-    Perc --> WM[Working Memory]
-    Perc --> Rules[System 1: Symbolic Rules\n(Fast, Rigid)]
-    Perc --> DQN[System 2: Deep Q-Network\n(Slow, Adaptive)]
-    Rules --> Arb[Arbitrator]
+    Env["Environment\n(GridWorld)"] --> Perc["Perception"]
+    Perc --> WM["Working Memory"]
+    Perc --> Rules["System 1: Symbolic Rules\n(Fast, Rigid)"]
+    Perc --> DQN["System 2: Deep Q-Network\n(Slow, Adaptive)"]
+    Rules --> Arb["Arbitrator"]
     DQN --> Arb
-    Arb --> Meta[System 3: Meta-Cognition\n(Taboo List / Inhibition)]
-    Meta --> Action[Action Selection]
+    Arb --> Meta["System 3: Meta-Cognition\n(Taboo List / Inhibition)"]
+    Meta --> Action["Action Selection"]
     Action --> Env
 ```
 
